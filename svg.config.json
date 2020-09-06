@@ -1,0 +1,9 @@
+{
+  "dest": "htdocs/common/svg/",
+  "mode": {
+    "symbol": {
+      "dest" : "./",
+      "sprite": "sprite.svg"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@use 'base/vars' as *;
+
+//*------------------------------------*//
+//	Base
+//*------------------------------------*//
+
+@use 'base/reset';
+@use 'base/default';
+
+
+
+
+
+
+//*------------------------------------*//
+//	page
+//*------------------------------------*//
+.target{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include rem(50);
+    background-color: #7dcfe9;
+    font-weight: bold;
+    
+    transition-property: background-color, color;
+    transition-duration: .4s;
+}
+
+.inview{
+    background-color: #faf811;
+    color: #000;
+}

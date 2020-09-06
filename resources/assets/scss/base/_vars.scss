@@ -1,0 +1,36 @@
+///*------------------------------------*//
+//    Fonts
+//*------------------------------------*//
+$font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+$line-height: 1.5;
+
+
+
+
+///*------------------------------------*//
+//    Colors
+//*------------------------------------*//
+$main-color: #fff;
+$accent-color: #f00;
+$font-color: #000;
+$base-color: #fff;
+$bg-color: #fff;
+
+
+
+
+///*------------------------------------*//
+//     Mixin
+//*------------------------------------*//
+
+//メディアクエリ挿入
+@mixin media_query($width:640) {
+    @media screen and (max-width: $width+px) {
+        @content;
+    }
+}
+
+//フォントサイズ計算
+@mixin rem($size, $base: 16) {
+    font-size: ($size / $base) + rem;
+}
